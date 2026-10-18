@@ -1,0 +1,14 @@
+{
+  "name": "iryna-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Iryna Lopatina — portfolio (static HTML + Tailwind CSS)",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/container-queries": "0.1.1",
+    "tailwindcss": "3.4.17"
+  }
+}

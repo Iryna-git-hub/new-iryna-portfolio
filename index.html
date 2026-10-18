@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iryna Lopatina — Full-Stack Developer</title>
+  <meta name="description" content="Iryna Lopatina — Frontend-focused Full-Stack Developer with a UX/UI background. React, Next.js, TypeScript, Node.js.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Instrument+Serif:ital@0;1&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Barlow+Condensed:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body class="m-0 overflow-x-hidden bg-ink font-sans text-ink">
+
+<div class="relative">
+
+  <!-- Preloader -->
+  <div id="pre" aria-hidden="true" class="absolute inset-x-0 top-0 z-30 flex h-[clamp(640px,100vh,900px)] animate-slide-up flex-col items-center justify-center gap-[18px] bg-pink bg-grid-white bg-cell">
+    <div class="font-mono text-[clamp(44px,7vw,104px)] font-medium tracking-[-0.02em] text-white">
+      <span class="opacity-0 animate-type-in [animation-delay:0.15s]">.</span>
+      <span class="opacity-0 animate-type-in [animation-delay:0.29s]">/</span>
+      <span class="opacity-0 animate-type-in [animation-delay:0.43s]">i</span>
+      <span class="opacity-0 animate-type-in [animation-delay:0.57s]">r</span>
+      <span class="opacity-0 animate-type-in [animation-delay:0.71s]">y</span>
+      <span class="opacity-0 animate-type-in [animation-delay:0.85s]">n</span>
+      <span class="opacity-0 animate-type-in [animation-delay:0.99s]">a</span>
+      <span class="ml-[0.06em] inline-block h-[0.08em] w-[0.5em] animate-caret bg-ink"></span>
+    </div>
+    <div id="counter" class="font-mono text-[13px] tracking-[0.1em] text-ink">0%</div>
+  </div>
+
+  <!-- Hero -->
+  <section id="top" class="relative cursor-crosshair overflow-hidden">
+  <div class="relative bg-pink bg-grid-white bg-cell">
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-[1] overflow-hidden">
+      <span class="absolute left-[60px] top-[239px] h-20 w-20 border border-white/50 bg-hatch-white"></span>
+      <svg viewBox="0 0 80 80" class="absolute bottom-[159px] right-[79px] h-20 w-20"><rect x="0.5" y="0.5" width="79" height="79" fill="none" stroke="rgba(255,255,255,0.55)"></rect><path d="M0 0 L80 80 M80 0 L0 80" stroke="rgba(255,255,255,0.55)"></path></svg>
+      <span class="absolute left-[25%] top-[18%] font-mono text-sm leading-none text-white/70">+</span>
+      <span class="absolute left-[78%] top-[22%] font-mono text-sm leading-none text-white/70">+</span>
+      <span class="absolute left-[12%] top-[88%] font-mono text-sm leading-none text-white/70">+</span>
+      <span class="absolute left-[60%] top-[70%] font-mono text-sm leading-none text-white/70">+</span>
+      <span class="absolute left-[95%] top-[90%] font-mono text-sm leading-none text-white/70">+</span>
+    </div>
+    <nav aria-label="Main" class="absolute inset-x-0 top-0 z-[4] flex flex-wrap items-center justify-between gap-x-6 gap-y-3 px-[clamp(20px,5vw,72px)] py-7">
+      <a href="#top" class="py-2 font-mono text-lg font-medium text-white no-underline">./iryna</a>
+      <div data-nolens class="flex flex-wrap items-center gap-x-[clamp(18px,2.8vw,44px)] gap-y-2 font-mono text-[13px] font-bold uppercase tracking-[0.08em]">
+        <a class="nav-link py-[11px] px-0.5 text-white no-underline" href="#about">About</a>
+        <a class="nav-link py-[11px] px-0.5 text-white no-underline" href="#skills">Skills</a>
+        <a class="nav-link py-[11px] px-0.5 text-white no-underline" href="#projects">Projects</a>
+        <a class="nav-link py-[11px] px-0.5 text-white no-underline" href="#contact">Contact</a>
+        <a class="rounded-full bg-ink px-[18px] py-3 text-white no-underline transition hover:-translate-y-0.5 hover:bg-sun hover:text-ink" href="https://drive.google.com/file/d/1itNRtT4xziw5_1_ux_mpnfRijNbl9MFv/view?usp=sharing">CV ↗</a>
+      </div>
+    </nav>
+    <div class="relative z-[2] mx-auto box-border flex min-h-[clamp(640px,100vh,900px)] max-w-[1440px] flex-col justify-between gap-6 px-5 pb-10 pt-[132px] min-[861px]:pl-[clamp(20px,5vw,72px)] min-[861px]:pr-[clamp(76px,8vw,128px)] min-[861px]:pt-[108px]">
+      <div class="relative z-[2]">
+        <div class="mb-[22px] flex flex-wrap justify-between gap-x-6 gap-y-2 font-mono text-[13px] uppercase tracking-[0.08em] text-white">
+          <span>[ 01 ] — Hello, I’m Iryna</span>
+          <span class="inline-flex items-center gap-2.5"><span class="inline-block h-2 w-2 animate-soft-pulse bg-white"></span>Open to Frontend &amp; Full-Stack roles</span>
+        </div>
+        <h1 class="m-0 leading-[0.86] tracking-[-0.045em] text-white">
+          <span class="block font-serif text-[clamp(56px,min(11vw,17vh),180px)] italic tracking-[-0.02em]">Full-Stack</span>
+          <span class="block text-[clamp(54px,min(11.6vw,18vh),190px)] font-bold">Developer<span class="text-white">.</span></span>
+        </h1>
+      </div>
+      <div class="relative z-[2] flex flex-wrap items-end justify-between gap-6">
+        <div class="flex flex-wrap items-stretch gap-5">
+          <div class="relative w-[300px] max-w-full border border-white/75 bg-pink px-5 pb-[18px] pt-4 text-white">
+            <span class="handle -top-[3px] -left-[3px] border-white/75"></span><span class="handle -top-[3px] -right-[3px] border-white/75"></span><span class="handle -bottom-[3px] -left-[3px] border-white/75"></span><span class="handle -bottom-[3px] -right-[3px] border-white/75"></span><span class="handle -top-[3px] left-[calc(50%-3px)] border-white/75"></span><span class="handle -bottom-[3px] left-[calc(50%-3px)] border-white/75"></span><span class="handle top-[calc(50%-3px)] -left-[3px] border-white/75"></span><span class="handle top-[calc(50%-3px)] -right-[3px] border-white/75"></span>
+            <div class="mb-2 font-cond text-[17px] font-medium uppercase tracking-[0.08em]">About</div>
+            <p class="m-0 text-[15px] leading-normal">Frontend-focused Full-Stack Developer with a Master’s degree in Process Engineering.</p>
+          </div>
+          <div class="relative w-[380px] max-w-full border border-white/75 bg-pink px-5 pb-[18px] pt-4 text-white">
+            <span class="handle -top-[3px] -left-[3px] border-white/75"></span><span class="handle -top-[3px] -right-[3px] border-white/75"></span><span class="handle -bottom-[3px] -left-[3px] border-white/75"></span><span class="handle -bottom-[3px] -right-[3px] border-white/75"></span><span class="handle -top-[3px] left-[calc(50%-3px)] border-white/75"></span><span class="handle -bottom-[3px] left-[calc(50%-3px)] border-white/75"></span><span class="handle top-[calc(50%-3px)] -left-[3px] border-white/75"></span><span class="handle top-[calc(50%-3px)] -right-[3px] border-white/75"></span>
+            <div class="mb-2 font-cond text-[17px] font-medium uppercase tracking-[0.08em]">Stack</div>
+            <div class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1.5 text-sm leading-[1.45]">
+              <span class="pt-[3px] font-mono text-[11px]">Frontend</span><span>React · Next.js · TypeScript · Tailwind CSS</span>
+              <span class="pt-[3px] font-mono text-[11px]">Backend</span><span>Express · REST APIs · SQLite · Python · Flask</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a data-hb="contact" href="#contact" class="group inline-flex min-h-[52px] items-center gap-2 rounded-full bg-ink px-7 text-base font-medium text-white no-underline">Contact me <span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:translate-x-[7px]">→</span></a>
+          <a data-hb="cv" href="https://drive.google.com/file/d/1itNRtT4xziw5_1_ux_mpnfRijNbl9MFv/view?usp=sharing" class="inline-flex min-h-[52px] items-center rounded-full border-[1.5px] border-white px-7 text-base font-medium text-white no-underline transition-colors duration-300 hover:bg-white hover:text-pink">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="lens" aria-hidden="true" class="pointer-events-none absolute inset-0 z-[5] animate-lens-idle bg-sun bg-grid-ink bg-cell [clip-path:circle(140px_at_70%_40%)] [transition:clip-path_.1s_linear]">
+
+    <div class="absolute inset-x-0 top-0 z-[4] flex flex-wrap items-center justify-between gap-x-6 gap-y-3 px-[clamp(20px,5vw,72px)] py-7 text-ink">
+      <span class="py-2 font-mono text-lg font-medium">./iryna</span>
+      <div class="flex flex-wrap items-center gap-x-[clamp(18px,2.8vw,44px)] gap-y-2 font-mono text-[13px] font-bold uppercase tracking-[0.08em]">
+        <span class="px-0.5 py-[11px]">About</span>
+        <span class="px-0.5 py-[11px]">Skills</span>
+        <span class="px-0.5 py-[11px]">Projects</span>
+        <span class="px-0.5 py-[11px]">Contact</span>
+        <span class="rounded-full bg-ink px-[18px] py-3 text-white">CV ↗</span>
+      </div>
+    </div>
+    <div class="relative z-[2] mx-auto box-border flex h-full max-w-[1440px] flex-col justify-between gap-6 px-5 pb-10 pt-[132px] min-[861px]:pl-[clamp(20px,5vw,72px)] min-[861px]:pr-[clamp(76px,8vw,128px)] min-[861px]:pt-[108px]">
+      <div class="relative z-[2]">
+        <div class="mb-[22px] flex flex-wrap justify-between gap-x-6 gap-y-2 font-mono text-[13px] uppercase tracking-[0.08em] text-ink">
+          <span>[ 01 ] — Look inside</span>
+          <span class="inline-flex items-center gap-2.5">↳ a developer who thinks like a designer</span>
+        </div>
+        <div class="m-0 leading-[0.86] tracking-[-0.045em] text-ink">
+          <span class="block font-serif text-[clamp(56px,min(11vw,17vh),180px)] italic tracking-[-0.02em]">with UX/UI</span>
+          <span class="block text-[clamp(54px,min(11.6vw,18vh),190px)] font-bold">experience<span class="text-pink">.</span></span>
+        </div>
+        <div class="mt-3.5 flex flex-wrap gap-2 font-mono text-[11px]">
+          <span class="border border-ink px-[7px] py-[3px]">Instrument Serif · Italic</span>
+          <span class="border border-ink px-[7px] py-[3px]">Space Grotesk · Bold · −4.5%</span>
+          <span class="border border-ink bg-pink px-[7px] py-[3px]">#F03E71</span>
+          <span class="border border-ink bg-ink px-[7px] py-[3px] text-white">#1A1E1F</span>
+        </div>
+      </div>
+      <div class="relative z-[2] flex flex-wrap items-end justify-between gap-6">
+        <div class="flex flex-wrap items-stretch gap-5">
+          <div class="relative w-[300px] max-w-full border border-ink/55 bg-sun px-5 pb-[18px] pt-4 text-ink">
+            <span class="handle -top-[3px] -left-[3px] border-ink/55"></span><span class="handle -top-[3px] -right-[3px] border-ink/55"></span><span class="handle -bottom-[3px] -left-[3px] border-ink/55"></span><span class="handle -bottom-[3px] -right-[3px] border-ink/55"></span><span class="handle -top-[3px] left-[calc(50%-3px)] border-ink/55"></span><span class="handle -bottom-[3px] left-[calc(50%-3px)] border-ink/55"></span><span class="handle top-[calc(50%-3px)] -left-[3px] border-ink/55"></span><span class="handle top-[calc(50%-3px)] -right-[3px] border-ink/55"></span>
+            <div class="mb-2 font-cond text-[17px] font-medium uppercase tracking-[0.08em]">Eye for detail</div>
+            <p class="m-0 text-[15px] leading-normal">Accessible, responsive and usable by default — the small things are the product.</p>
+          </div>
+          <div class="relative w-[380px] max-w-full border border-ink/55 bg-sun px-5 pb-[18px] pt-4 text-ink">
+            <span class="handle -top-[3px] -left-[3px] border-ink/55"></span><span class="handle -top-[3px] -right-[3px] border-ink/55"></span><span class="handle -bottom-[3px] -left-[3px] border-ink/55"></span><span class="handle -bottom-[3px] -right-[3px] border-ink/55"></span><span class="handle -top-[3px] left-[calc(50%-3px)] border-ink/55"></span><span class="handle -bottom-[3px] left-[calc(50%-3px)] border-ink/55"></span><span class="handle top-[calc(50%-3px)] -left-[3px] border-ink/55"></span><span class="handle top-[calc(50%-3px)] -right-[3px] border-ink/55"></span>
+            <div class="mb-2 font-cond text-[17px] font-medium uppercase tracking-[0.08em]">UX/UI background</div>
+            <p class="m-0 text-[15px] leading-normal">I work as a developer — and bring real UX/UI experience with me: the knowledge, the visual style and a feel for interfaces people enjoy.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <span id="bContact" class="group inline-flex min-h-[52px] items-center gap-2 rounded-full bg-pink px-7 text-base font-medium text-ink transition-colors duration-300 data-[on]:text-white">Contact me <span aria-hidden="true" class="inline-block transition-transform duration-300 group-data-[on]:translate-x-[7px]">→</span></span>
+          <span id="bCv" class="inline-flex min-h-[52px] items-center rounded-full border-[1.5px] border-dashed border-ink px-7 text-base font-medium text-ink transition-colors duration-300 data-[on]:text-pink">Download CV</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="ring" aria-hidden="true" class="pointer-events-none absolute left-0 top-0 z-[6] h-0 w-0 opacity-0 [transition:transform_.1s_linear,opacity_.3s]">
+    <svg viewBox="0 0 100 100" class="absolute -inset-[3%] h-[106%] w-[106%] overflow-visible">
+      <path d="M50 3 C78 2 98 22 97 50 C96 79 76 97 49 97 C21 96 3 77 4 49 C5 22 24 4 53 5" fill="none" stroke="#1a1e1f" stroke-width="1.4" vector-effect="non-scaling-stroke"></path>
+      <path d="M47 6 C75 4 95 25 95 52 C94 77 72 95 46 94 C22 93 6 73 7 47 C8 24 28 7 54 8" fill="none" stroke="#1a1e1f" stroke-width="1" vector-effect="non-scaling-stroke" opacity="0.5"></path>
+    </svg>
+    <span class="absolute -right-2 bottom-[12%] whitespace-nowrap bg-ink px-[9px] py-[5px] font-mono text-[11px] tracking-[0.06em] text-sun">look inside</span>
+  </div>
+  <div aria-hidden="true" class="pointer-events-none absolute inset-0 z-[7] hidden min-[861px]:block">
+    <div class="absolute flex animate-cur-a items-start gap-0.5">
+      <span class="absolute -left-3.5 -top-3.5 h-7 w-7 animate-click rounded-full border-[1.5px] border-white"></span>
+      <svg viewBox="0 0 20 20" width="20" height="20"><path d="M2 2 L2 16 L6 12 L9 18 L11.5 17 L8.6 11 L14 11 Z" stroke-width="1.2" stroke-linejoin="round" fill="#1a1e1f" stroke="#ffffff"></path></svg>
+      <span class="mt-3.5 whitespace-nowrap bg-ink px-2 py-[3px] font-mono text-[11px] text-white">iryna</span>
+    </div>
+    <div class="absolute flex animate-cur-b items-start gap-0.5">
+      <svg viewBox="0 0 20 20" width="20" height="20"><path d="M2 2 L2 16 L6 12 L9 18 L11.5 17 L8.6 11 L14 11 Z" stroke-width="1.2" stroke-linejoin="round" fill="#ffd23f" stroke="#1a1e1f"></path></svg>
+      <span class="mt-3.5 whitespace-nowrap bg-sun px-2 py-[3px] font-mono text-[11px] text-ink">AI pair</span>
+    </div>
+  </div>
+  <div data-nolens class="z-10 flex flex-row items-center gap-2.5 bg-pink px-5 pb-7 min-[861px]:absolute min-[861px]:right-[clamp(16px,2vw,32px)] min-[861px]:top-1/2 min-[861px]:-translate-y-1/2 min-[861px]:flex-col min-[861px]:bg-transparent min-[861px]:p-0">
+    <a class="inline-flex h-[46px] w-[46px] items-center justify-center rounded-full border border-white bg-pink text-white no-underline transition hover:-translate-y-0.5 hover:bg-ink hover:text-sun" href="https://www.linkedin.com/in/iryna-lopatina/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+    <a class="inline-flex h-[46px] w-[46px] items-center justify-center rounded-full border border-white bg-pink text-white no-underline transition hover:-translate-y-0.5 hover:bg-ink hover:text-sun" href="https://github.com/Iryna-git-hub" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+    <a class="inline-flex h-[46px] w-[46px] items-center justify-center rounded-full border border-white bg-pink text-white no-underline transition hover:-translate-y-0.5 hover:bg-ink hover:text-sun" href="https://www.behance.net/IrynaLopatina" aria-label="Behance" title="Behance"><span aria-hidden="true" class="font-sans text-[15px] font-bold tracking-[-0.04em]">Bē</span></a>
+    <span aria-hidden="true" class="mt-1 hidden h-14 w-px bg-white min-[861px]:block"></span>
+  </div>
+  </section>
+
+  <!-- Tools marquee -->
+<div aria-hidden="true" class="overflow-hidden bg-ink py-[18px] text-sun">
+  <div class="flex w-max animate-marq whitespace-nowrap text-[26px] font-medium tracking-[-0.01em]">
+    <span class="pr-8">JavaScript <span class="text-pink">✳</span> TypeScript <span class="text-pink">✳</span> HTML5 <span class="text-pink">✳</span> CSS3 <span class="text-pink">✳</span> SQL <span class="text-pink">✳</span> Python <span class="text-pink">✳</span> C <span class="text-pink">✳</span> React <span class="text-pink">✳</span> Next.js <span class="text-pink">✳</span> Tailwind CSS <span class="text-pink">✳</span> Bootstrap <span class="text-pink">✳</span> Responsive Web Design <span class="text-pink">✳</span> UX/UI Best Practices <span class="text-pink">✳</span> SEO &amp; Accessibility (WCAG) <span class="text-pink">✳</span> Flask <span class="text-pink">✳</span> Node.js <span class="text-pink">✳</span> Express.js <span class="text-pink">✳</span> REST APIs <span class="text-pink">✳</span> SQLite <span class="text-pink">✳</span> Authentication <span class="text-pink">✳</span> AI-Assisted Development <span class="text-pink">✳</span> Testing <span class="text-pink">✳</span> Git <span class="text-pink">✳</span> Postman <span class="text-pink">✳</span> VS Code <span class="text-pink">✳</span> Trello <span class="text-pink">✳</span> Agile <span class="text-pink">✳</span></span>
+    <span class="pr-8">JavaScript <span class="text-pink">✳</span> TypeScript <span class="text-pink">✳</span> HTML5 <span class="text-pink">✳</span> CSS3 <span class="text-pink">✳</span> SQL <span class="text-pink">✳</span> Python <span class="text-pink">✳</span> C <span class="text-pink">✳</span> React <span class="text-pink">✳</span> Next.js <span class="text-pink">✳</span> Tailwind CSS <span class="text-pink">✳</span> Bootstrap <span class="text-pink">✳</span> Responsive Web Design <span class="text-pink">✳</span> UX/UI Best Practices <span class="text-pink">✳</span> SEO &amp; Accessibility (WCAG) <span class="text-pink">✳</span> Flask <span class="text-pink">✳</span> Node.js <span class="text-pink">✳</span> Express.js <span class="text-pink">✳</span> REST APIs <span class="text-pink">✳</span> SQLite <span class="text-pink">✳</span> Authentication <span class="text-pink">✳</span> AI-Assisted Development <span class="text-pink">✳</span> Testing <span class="text-pink">✳</span> Git <span class="text-pink">✳</span> Postman <span class="text-pink">✳</span> VS Code <span class="text-pink">✳</span> Trello <span class="text-pink">✳</span> Agile <span class="text-pink">✳</span></span>
+  </div>
+</div>
+
+  <!-- About -->
+<section id="about" class="bg-char text-mist">
+  <div class="mx-auto max-w-[1440px] px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,140px)]">
+    <div class="reveal mb-14 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3 border-b border-white/15 pb-5">
+      <h2 class="m-0 text-[clamp(52px,7.5vw,112px)] font-bold leading-[0.9] tracking-[-0.045em] text-white">About<span class="text-pink">.</span></h2>
+      <span class="font-mono text-[13px] uppercase tracking-[0.08em] text-steel">[ 02 ] — who’s behind the code</span>
+    </div>
+    <div class="grid grid-cols-1 items-stretch gap-[clamp(48px,6vw,96px)] min-[1100px]:grid-cols-2">
+      <div class="reveal">
+        <p class="m-0 mb-10 text-[clamp(28px,3.1vw,44px)] font-medium leading-[1.12] tracking-[-0.025em] text-white">I turn ideas and designs into <span class="relative inline-block font-serif font-normal italic text-pink">clean, usable<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true" class="absolute -bottom-[0.18em] -left-[2%] h-[0.36em] w-[104%] overflow-visible"><path class="animate-draw-u [stroke-dasharray:1] [stroke-dashoffset:1]" pathLength="1" d="M2 12 C40 4 90 16 130 8 C160 3 185 10 198 6" fill="none" stroke="#ffd23f" stroke-width="2.2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path></svg></span> products — from polished interfaces to full web apps.</p>
+        <div class="flex max-w-[600px] flex-col gap-5 text-lg leading-relaxed">
+          <p class="m-0">I’m a Frontend-focused Full-Stack Developer with a strong background in UX/UI Design and a Master’s degree in Process Engineering. I build responsive, accessible, and user-friendly digital products.</p>
+          <p class="m-0">My core stack includes React, Next.js, TypeScript, JavaScript, Tailwind CSS, Node.js, REST APIs and SQL. I combine technical problem-solving with a designer’s eye for usability and detail, turning ideas into clean, maintainable, production-ready solutions.</p>
+          <p class="m-0">I’m open to Frontend and Full-Stack opportunities, as well as collaborations on meaningful web projects.</p>
+        </div>
+        <div class="mt-9 flex flex-wrap gap-2.5 font-mono text-[13px]">
+          <span class="chip border border-white/20 px-4 py-2.5">M.Sc. Process Engineering</span>
+          <span class="chip border border-white/20 px-4 py-2.5">UX/UI background</span>
+          <span class="chip border border-white/20 px-4 py-2.5">Frontend-focused</span>
+        </div>
+      </div>
+      <div class="reveal self-center">
+        <div class="@container/col mx-auto w-full max-w-[620px]">
+        <div class="relative aspect-[600/980] w-full @[441px]/col:aspect-[600/580]">
+          <figure class="ph group absolute m-0 left-0 top-0 w-[60%] @[441px]/col:top-[4%] @[441px]/col:w-[54%] -rotate-2 z-[2] animate-drift [animation-delay:-5s] [animation-duration:11s] transition-transform duration-500 hover:z-[9] hover:rotate-0 hover:scale-[1.04]">
+            <img src="assets/workshop.jpg" alt="Iryna with colleagues at a workshop" class="block w-full aspect-[4/3] object-cover object-center shadow-[0_24px_48px_rgba(0,0,0,0.35)] transition-shadow duration-500 group-hover:shadow-[10px_10px_0_#ffd23f]">
+            <figcaption class="absolute bottom-2 left-2 box-border max-w-[calc(100%-16px)] overflow-hidden text-ellipsis whitespace-nowrap bg-ink/85 px-[7px] py-[3px] font-mono text-[11px] text-mist">workshop.jpg</figcaption>
+          </figure>
+          <figure class="ph group absolute m-0 right-0 top-[6%] w-[38%] @[441px]/col:right-[4%] @[441px]/col:top-0 @[441px]/col:w-[32%] rotate-3 z-[3] animate-drift [animation-delay:-7.5s] [animation-duration:13s] transition-transform duration-500 hover:z-[9] hover:rotate-0 hover:scale-[1.04]">
+            <img src="assets/goto-conference.jpg" alt="Iryna in a pink T-shirt at the GOTO conference" class="block w-full aspect-[3/4] object-cover object-[42%_center] shadow-[0_24px_48px_rgba(0,0,0,0.35)] transition-shadow duration-500 group-hover:shadow-[10px_10px_0_#ffd23f]">
+            <figcaption class="absolute bottom-2 left-2 box-border max-w-[calc(100%-16px)] overflow-hidden text-ellipsis whitespace-nowrap bg-ink/85 px-[7px] py-[3px] font-mono text-[11px] text-mist">goto-conference.jpg</figcaption>
+          </figure>
+          <figure class="ph group absolute m-0 left-[4%] top-[27%] w-[34%] @[441px]/col:left-[2%] @[441px]/col:top-[46%] @[441px]/col:w-[27%] -rotate-3 z-[2] animate-drift  transition-transform duration-500 hover:z-[9] hover:rotate-0 hover:scale-[1.04]">
+            <img src="assets/hello.jpg" alt="Iryna smiling with arms wide open in front of a pink and yellow wall" class="block w-full aspect-[4/5] object-cover object-center shadow-[0_24px_48px_rgba(0,0,0,0.35)] transition-shadow duration-500 group-hover:shadow-[10px_10px_0_#ffd23f]">
+            <figcaption class="absolute bottom-2 left-2 box-border max-w-[calc(100%-16px)] overflow-hidden text-ellipsis whitespace-nowrap bg-ink/85 px-[7px] py-[3px] font-mono text-[11px] text-mist">hello.jpg</figcaption>
+          </figure>
+          <figure class="ph group absolute m-0 right-[2%] top-[34%] w-[56%] @[441px]/col:left-[22%] @[441px]/col:right-auto @[441px]/col:top-[66%] @[441px]/col:w-[40%] rotate-2 z-[3] animate-drift [animation-delay:-2.5s] [animation-duration:12s] transition-transform duration-500 hover:z-[9] hover:rotate-0 hover:scale-[1.04]">
+            <img src="assets/meetup.jpg" alt="Iryna with a group of women at a tech meetup" class="block w-full aspect-[3/2] object-cover object-center shadow-[0_24px_48px_rgba(0,0,0,0.35)] transition-shadow duration-500 group-hover:shadow-[10px_10px_0_#ffd23f]">
+            <figcaption class="absolute bottom-2 left-2 box-border max-w-[calc(100%-16px)] overflow-hidden text-ellipsis whitespace-nowrap bg-ink/85 px-[7px] py-[3px] font-mono text-[11px] text-mist">meetup.jpg</figcaption>
+          </figure>
+          <div class="absolute bottom-0 left-[8%] z-[4] box-border w-[84%] -rotate-2 bg-sun px-[18px] pb-4 pt-3.5 font-mono text-[12.5px] leading-[1.4] text-ink shadow-[0_16px_32px_rgba(0,0,0,0.25)] transition-transform duration-500 hover:z-10 hover:rotate-0 hover:scale-[1.03] @[441px]/col:bottom-auto @[441px]/col:left-auto @[441px]/col:right-0 @[441px]/col:top-[42%] @[441px]/col:w-[38%] @[441px]/col:min-w-[220px]">
+            <div class="mb-2.5 text-[11px] tracking-[0.08em]">// OFFLINE MODE<span class="ml-1 inline-block h-3 w-[7px] animate-caret bg-ink align-[-1px]"></span></div>
+            <ul class="m-0 flex list-none flex-col gap-[7px] p-0">
+              <li class="-mx-1 flex items-center gap-2.5 px-1 py-0.5 animate-row-hi [animation-delay:0.0s]"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"></path></svg>lifting</li>
+              <li class="-mx-1 flex items-center gap-2.5 px-1 py-0.5 animate-row-hi [animation-delay:1.5s]"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0"><rect x="3" y="5" width="18" height="16"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg>CPH tech events</li>
+              <li class="-mx-1 flex items-center gap-2.5 px-1 py-0.5 animate-row-hi [animation-delay:3.0s]"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0"><path d="M7 3v8a2 2 0 0 0 2 2v8M11 3v8M17 3c-2 0-3 2-3 5s1 4 3 4v9"></path></svg>good food &amp; vibes</li>
+              <li class="-mx-1 flex items-center gap-2.5 px-1 py-0.5 animate-row-hi [animation-delay:4.5s]"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path></svg>active time with my son</li>
+              <li class="-mx-1 flex items-center gap-2.5 px-1 py-0.5 animate-row-hi [animation-delay:6.0s]"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="shrink-0"><path d="M12 21v-9M12 12c0-4 3-6 7-6 0 4-3 6-7 6zM12 15c0-3-2-5-6-5 0 3 2 5 6 5z"></path></svg>greenhouse: tomatoes &amp; cucumbers</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills -->
+<section id="skills" class="bg-white bg-grid-faint bg-cell text-char">
+  <div class="mx-auto max-w-[1440px] px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,140px)]">
+    <div class="reveal mb-14 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3 border-b border-ink/15 pb-5">
+      <h2 class="m-0 text-[clamp(52px,7.5vw,112px)] font-bold leading-[0.9] tracking-[-0.045em] text-ink">Skills<span class="text-pink">.</span></h2>
+      <span class="font-mono text-[13px] uppercase tracking-[0.08em] text-muted">[ 03 ] — sorted by layer of the stack</span>
+    </div>
+    <div class="grid grid-cols-1 gap-6 min-[760px]:grid-cols-2 min-[1150px]:grid-cols-3">
+      <article class="reveal relative border border-ink/15 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-pink">
+        <div class="mb-5 flex items-center justify-between font-mono text-xs tracking-[0.1em] text-muted"><span>FE / 01</span><span class="inline-block h-3.5 w-3.5 bg-pink"></span></div>
+        <h3 class="m-0 mb-2 text-[40px] font-bold tracking-[-0.035em] text-ink">Frontend</h3>
+        <p class="m-0 mb-6 text-[15px] text-muted">Interfaces people enjoy using.</p>
+        <div class="flex flex-wrap gap-2 text-[15px]">
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">React</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Next.js</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">TypeScript</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">JavaScript</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">HTML5</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">CSS3</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Tailwind CSS</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Bootstrap</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Responsive web design</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">UX/UI best practices</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">SEO &amp; Accessibility (WCAG)</span>
+        </div>
+      </article>
+      <article class="reveal relative border border-ink/15 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-pink">
+        <div class="mb-5 flex items-center justify-between font-mono text-xs tracking-[0.1em] text-muted"><span>BE / 02</span><span class="inline-block h-3.5 w-3.5 bg-sun"></span></div>
+        <h3 class="m-0 mb-2 text-[40px] font-bold tracking-[-0.035em] text-ink">Backend</h3>
+        <p class="m-0 mb-6 text-[15px] text-muted">The logic and data underneath.</p>
+        <div class="flex flex-wrap gap-2 text-[15px]">
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Node.js</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Express.js</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">REST APIs</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">SQL</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">SQLite</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Python</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Flask</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">C</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Authentication</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Testing</span>
+        </div>
+      </article>
+      <article class="reveal relative border border-ink/15 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:border-pink">
+        <div class="mb-5 flex items-center justify-between font-mono text-xs tracking-[0.1em] text-muted"><span>TL / 03</span><span class="inline-block h-3.5 w-3.5 border-[1.5px] border-ink"></span></div>
+        <h3 class="m-0 mb-2 text-[40px] font-bold tracking-[-0.035em] text-ink">Tools &amp; Design</h3>
+        <p class="m-0 mb-6 text-[15px] text-muted">How the work gets planned and shipped.</p>
+        <div class="flex flex-wrap gap-2 text-[15px]">
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Git</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">GitHub</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">npm</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Postman</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">VS Code</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Trello</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Agile</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">AI-assisted development</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">AI-assisted design</span>
+          <span class="chip bg-paper px-3.5 py-2 font-semibold text-slate2">Figma</span>
+        </div>
+      </article>
+    </div>
+    <div class="reveal mt-6 flex flex-wrap items-start gap-x-10 gap-y-5 border border-dashed border-pink px-7 py-6">
+      <span class="inline-flex shrink-0 items-center gap-2.5 pt-1.5 font-mono text-xs tracking-[0.1em] text-pink-deep"><span class="inline-block h-[9px] w-[9px] animate-soft-pulse bg-pink"></span>CURRENTLY LEARNING</span>
+      <div class="flex flex-[1_1_320px] flex-col gap-1.5 py-1">
+        <span class="text-xl font-medium tracking-[-0.01em] text-ink">Microsoft Azure Fundamentals (AZ-900)</span>
+        <span class="font-mono text-xs text-muted">Exam preparation in progress · Itucation, 2026</span>
+      </div>
+      <div class="flex flex-[1_1_320px] flex-col gap-1.5 py-1">
+        <span class="text-xl font-medium tracking-[-0.01em] text-ink">Developing AI Cloud Solutions on Azure (AI-200)</span>
+        <span class="font-mono text-xs text-muted">Exam preparation in progress · Itucation, 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Projects -->
+<section id="projects" class="border-t border-ink/10 bg-white text-char">
+  <div class="mx-auto max-w-[1440px] px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,140px)]">
+    <div class="reveal mb-6 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-3 border-b border-ink/15 pb-5">
+      <h2 class="m-0 text-[clamp(52px,7.5vw,112px)] font-bold leading-[0.9] tracking-[-0.045em] text-ink">Projects<span class="text-pink">.</span></h2>
+      <span class="font-mono text-[13px] uppercase tracking-[0.08em] text-muted">[ 04 ] — selected work</span>
+    </div>
+    <article class="reveal grid grid-cols-1 items-center gap-[clamp(40px,5vw,88px)] py-[clamp(48px,5.5vw,80px)] min-[1000px]:grid-cols-2 border-b border-ink/15">
+      <div>
+        <div class="mb-4 font-mono text-xs tracking-[0.1em] text-pink-deep">P/01 — FULL-STACK</div>
+        <h3 class="m-0 mb-5 text-[clamp(34px,4.2vw,60px)] font-bold leading-[0.95] tracking-[-0.04em] text-ink">Frog Hunter <span class="font-serif font-normal italic text-pink">memory game</span></h3>
+        <p class="m-0 mb-6 max-w-[560px] text-[17px] leading-relaxed">A full-stack browser memory game. The frontend handles game state, matching logic, timer, difficulty levels and UI feedback; the backend serves card data through a REST API — a clear separation between frontend logic and backend storage.</p>
+        <div class="mb-7 flex flex-wrap gap-1.5 font-mono text-xs">
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">JavaScript</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">Node.js</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">Express.js</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">SQLite</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">REST API</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">Postman</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">Responsive</span>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a class="group inline-flex min-h-12 items-center gap-2 rounded-full bg-pink px-6 font-medium text-white no-underline transition hover:-translate-y-0.5 hover:bg-sun hover:text-ink" href="https://froghunter.onrender.com/">Live demo <span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:-translate-y-[3px] group-hover:translate-x-[3px]">↗</span></a>
+          <a class="group inline-flex min-h-12 items-center gap-2 rounded-full border-[1.5px] border-ink px-6 font-medium text-ink no-underline transition hover:-translate-y-0.5 hover:border-pink hover:text-pink" href="https://github.com/Iryna-git-hub/FrogHunter">Source code <span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:translate-x-[5px]">→</span></a>
+        </div>
+      </div>
+      <a class="group relative m-4 block transition-transform duration-500 hover:scale-[1.035]" href="https://froghunter.onrender.com/" aria-label="Open Frog Hunter memory game demo">
+        <span class="crop -left-3 -top-3 border-l border-t"></span><span class="crop -right-3 -top-3 border-r border-t"></span><span class="crop -bottom-3 -left-3 border-b border-l"></span><span class="crop -bottom-3 -right-3 border-b border-r"></span>
+        <span class="absolute -top-[34px] left-0 font-mono text-[11px] text-muted">frog-hunter — 1440 × 900</span>
+        <img src="assets/frog-hunter.jpg" alt="Frog Hunter memory game screenshot" class="block w-full shadow-[0_30px_60px_rgba(26,30,31,0.16)] transition-shadow duration-500 group-hover:shadow-[14px_14px_0_#ffd23f]">
+      </a>
+    </article>
+    <article class="reveal grid grid-cols-1 items-center gap-[clamp(40px,5vw,88px)] py-[clamp(48px,5.5vw,80px)] min-[1000px]:grid-cols-2 border-b border-ink/15">
+      <div>
+        <div class="mb-4 font-mono text-xs tracking-[0.1em] text-pink-deep">P/02 — FRONTEND</div>
+        <h3 class="m-0 mb-5 text-[clamp(34px,4.2vw,60px)] font-bold leading-[0.95] tracking-[-0.04em] text-ink">To-Do List <span class="font-serif font-normal italic text-pink">app</span></h3>
+        <p class="m-0 mb-6 max-w-[560px] text-[17px] leading-relaxed">A clean, responsive task manager: add, edit, complete and delete tasks with ease to stay organised and productive. Comes with both light and dark modes.</p>
+        <div class="mb-7 flex flex-wrap gap-1.5 font-mono text-xs">
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">HTML5</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">CSS3</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">JavaScript</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">Light / Dark mode</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">Responsive</span>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a class="group inline-flex min-h-12 items-center gap-2 rounded-full bg-pink px-6 font-medium text-white no-underline transition hover:-translate-y-0.5 hover:bg-sun hover:text-ink" href="https://iryna-git-hub.github.io/To-Do-List-App/">Live demo <span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:-translate-y-[3px] group-hover:translate-x-[3px]">↗</span></a>
+          <a class="group inline-flex min-h-12 items-center gap-2 rounded-full border-[1.5px] border-ink px-6 font-medium text-ink no-underline transition hover:-translate-y-0.5 hover:border-pink hover:text-pink" href="https://github.com/Iryna-git-hub/To-Do-List-App">Source code <span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:translate-x-[5px]">→</span></a>
+        </div>
+      </div>
+      <a class="group relative m-4 block transition-transform duration-500 hover:scale-[1.035]" href="https://iryna-git-hub.github.io/To-Do-List-App/" aria-label="Open To-Do List app demo">
+        <span class="crop -left-3 -top-3 border-l border-t"></span><span class="crop -right-3 -top-3 border-r border-t"></span><span class="crop -bottom-3 -left-3 border-b border-l"></span><span class="crop -bottom-3 -right-3 border-b border-r"></span>
+        <span class="absolute -top-[34px] left-0 font-mono text-[11px] text-muted">todo-app — 1440 × 900</span>
+        <img src="assets/todo-app.jpg" alt="To-Do List app screenshot" class="block w-full shadow-[0_30px_60px_rgba(26,30,31,0.16)] transition-shadow duration-500 group-hover:shadow-[14px_14px_0_#ffd23f]">
+      </a>
+    </article>
+    <article class="reveal grid grid-cols-1 items-center gap-[clamp(40px,5vw,88px)] py-[clamp(48px,5.5vw,80px)] min-[1000px]:grid-cols-2">
+      <div>
+        <div class="mb-4 font-mono text-xs tracking-[0.1em] text-pink-deep">P/03 — API INTEGRATION</div>
+        <h3 class="m-0 mb-5 text-[clamp(34px,4.2vw,60px)] font-bold leading-[0.95] tracking-[-0.04em] text-ink">Weather <span class="font-serif font-normal italic text-pink">app</span></h3>
+        <p class="m-0 mb-6 max-w-[560px] text-[17px] leading-relaxed">A responsive web app that fetches real-time weather from the OpenWeatherMap API. Check current conditions for your location or any city, with dynamic updates and error handling for invalid input.</p>
+        <div class="mb-7 flex flex-wrap gap-1.5 font-mono text-xs">
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">HTML5</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">CSS3</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">JavaScript</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">OpenWeatherMap API</span>
+          <span class="chip bg-paper px-3 py-1.5 font-bold text-slate2">Responsive</span>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a class="group inline-flex min-h-12 items-center gap-2 rounded-full bg-pink px-6 font-medium text-white no-underline transition hover:-translate-y-0.5 hover:bg-sun hover:text-ink" href="https://iryna-git-hub.github.io/Weather_app">Live demo <span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:-translate-y-[3px] group-hover:translate-x-[3px]">↗</span></a>
+          <a class="group inline-flex min-h-12 items-center gap-2 rounded-full border-[1.5px] border-ink px-6 font-medium text-ink no-underline transition hover:-translate-y-0.5 hover:border-pink hover:text-pink" href="https://github.com/Iryna-git-hub/Weather_app">Source code <span aria-hidden="true" class="inline-block transition-transform duration-300 group-hover:translate-x-[5px]">→</span></a>
+        </div>
+      </div>
+      <a class="group relative m-4 block transition-transform duration-500 hover:scale-[1.035]" href="https://iryna-git-hub.github.io/Weather_app" aria-label="Open Weather app demo">
+        <span class="crop -left-3 -top-3 border-l border-t"></span><span class="crop -right-3 -top-3 border-r border-t"></span><span class="crop -bottom-3 -left-3 border-b border-l"></span><span class="crop -bottom-3 -right-3 border-b border-r"></span>
+        <span class="absolute -top-[34px] left-0 font-mono text-[11px] text-muted">weather-app — 1440 × 900</span>
+        <img src="assets/weather-app.jpg" alt="Weather app screenshot" class="block w-full shadow-[0_30px_60px_rgba(26,30,31,0.16)] transition-shadow duration-500 group-hover:shadow-[14px_14px_0_#ffd23f]">
+      </a>
+    </article>
+  </div>
+</section>
+
+  <!-- Contact -->
+<section id="contact" class="relative overflow-hidden bg-pink bg-grid-white bg-cell text-white">
+  <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+    <span class="absolute bottom-[79px] left-[39px] h-20 w-20 border border-white/50 bg-hatch-white"></span>
+  </div>
+  <div class="relative mx-auto max-w-[1440px] px-[clamp(20px,5vw,72px)] py-[clamp(72px,9vw,140px)]">
+    <div class="mb-7 font-mono text-[13px] uppercase tracking-[0.08em]">[ 05 ] — Contact</div>
+    <h2 class="reveal m-0 mb-[clamp(48px,6vw,88px)] max-w-[1200px] text-[clamp(48px,8vw,128px)] font-bold leading-[0.9] tracking-[-0.045em]">Let’s build something <span class="font-serif font-normal italic">great</span> together!</h2>
+    <div class="grid grid-cols-1 items-start gap-[clamp(48px,5vw,80px)] min-[960px]:grid-cols-2">
+      <div class="flex flex-col border-t-[1.5px] border-white">
+        <a class="group flex items-center justify-between border-b-[1.5px] border-white py-[22px] text-[clamp(28px,3.2vw,44px)] font-bold tracking-[-0.03em] text-white no-underline transition-colors duration-300 hover:text-sun" href="https://www.linkedin.com/in/iryna-lopatina/"><span class="inline-block transition-transform duration-500 group-hover:translate-x-5">LinkedIn</span> <span aria-hidden="true">↗</span></a>
+        <a class="group flex items-center justify-between border-b-[1.5px] border-white py-[22px] text-[clamp(28px,3.2vw,44px)] font-bold tracking-[-0.03em] text-white no-underline transition-colors duration-300 hover:text-sun" href="https://github.com/Iryna-git-hub"><span class="inline-block transition-transform duration-500 group-hover:translate-x-5">GitHub</span> <span aria-hidden="true">↗</span></a>
+        <a class="group flex items-center justify-between border-b-[1.5px] border-white py-[22px] text-[clamp(28px,3.2vw,44px)] font-bold tracking-[-0.03em] text-white no-underline transition-colors duration-300 hover:text-sun" href="https://www.behance.net/IrynaLopatina"><span class="inline-block transition-transform duration-500 group-hover:translate-x-5">Behance</span> <span aria-hidden="true">↗</span></a>
+        <a class="group flex items-center justify-between border-b-[1.5px] border-white py-[22px] text-[clamp(28px,3.2vw,44px)] font-bold tracking-[-0.03em] text-white no-underline transition-colors duration-300 hover:text-sun" href="https://drive.google.com/file/d/1itNRtT4xziw5_1_ux_mpnfRijNbl9MFv/view?usp=sharing"><span class="inline-block transition-transform duration-500 group-hover:translate-x-5">Download CV</span> <span aria-hidden="true">↓</span></a>
+      </div>
+      <form name="contact" method="POST" data-netlify="true" class="reveal relative flex flex-col gap-5 bg-ink p-[clamp(24px,3.4vw,44px)] text-mist shadow-[14px_14px_0_#ffd23f] transition duration-500 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[22px_22px_0_#ffd23f] focus-within:-translate-x-1 focus-within:-translate-y-1 focus-within:shadow-[22px_22px_0_#ffd23f]">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="font-mono text-xs tracking-[0.1em] text-sun">SEND ME A MESSAGE — LET’S MAKE IT HAPPEN<span class="ml-1.5 inline-block h-3 w-[7px] animate-caret bg-sun align-[-1px]"></span></div>
+        <div class="flex flex-col gap-2">
+          <label for="cf-name" class="text-sm">Name</label>
+          <input id="cf-name" name="name" type="text" required placeholder="Your name" class="min-h-[52px] box-border border border-white/20 bg-char px-4 text-base text-white transition hover:border-white/45 focus:border-sun focus:bg-[#313839] focus:shadow-[inset_0_-3px_0_#ffd23f] focus:outline-none">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="cf-email" class="text-sm">Email</label>
+          <input id="cf-email" name="email" type="email" required placeholder="name@email.com" class="min-h-[52px] box-border border border-white/20 bg-char px-4 text-base text-white transition hover:border-white/45 focus:border-sun focus:bg-[#313839] focus:shadow-[inset_0_-3px_0_#ffd23f] focus:outline-none">
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="cf-msg" class="text-sm">Message</label>
+          <textarea id="cf-msg" name="message" rows="5" required placeholder="Tell me about your project or role" class="resize-y py-3.5 box-border border border-white/20 bg-char px-4 text-base text-white transition hover:border-white/45 focus:border-sun focus:bg-[#313839] focus:shadow-[inset_0_-3px_0_#ffd23f] focus:outline-none"></textarea>
+        </div>
+        <button type="submit" class="min-h-14 cursor-pointer border-0 bg-sun bg-fill-pink bg-[length:0%_100%] bg-no-repeat font-sans text-[17px] font-bold text-ink transition-[background-size] duration-500 hover:bg-[length:100%_100%]">Send message <span aria-hidden="true" class="inline-block animate-nudge">→</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-ink text-steel">
+  <div class="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-4 px-[clamp(20px,5vw,72px)] py-8 font-mono text-[13px]">
+    <a href="#top" class="py-2 text-lg font-medium text-pink no-underline transition-colors hover:text-sun">./iryna</a>
+    <span>Handcrafted by me © twentytwentysix</span>
+    <a href="#top" class="group py-3 text-mist no-underline transition-colors hover:text-sun">Back to top <span aria-hidden="true" class="inline-block transition-transform group-hover:-translate-y-1">↑</span></a>
+  </div>
+</footer>
+
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
