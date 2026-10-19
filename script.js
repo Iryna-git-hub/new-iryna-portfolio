@@ -87,3 +87,51 @@
     setButtonState('');
   });
 })();
+
+// ---------- Contact form (Formspree) ----------
+(function () {
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('form-status');
+  if (!form || !status) return;
+  var btn = form.querySelector('button[type="submit"]');
+  var btnHTML = btn.innerHTML;
+
+  function showStatus(message, ok) {
+    status.textContent = message;
+    status.classList.toggle('text-sun', ok);
+    status.classList.toggle('text-pink', !ok);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    status.textContent = '';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    })
+      .then(function (res) {
+        if (res.ok) {
+          form.reset();
+          showStatus('Thanks! Your message has been sent.', true);
+        } else {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            var msg = data.errors && data.errors.length
+              ? data.errors.map(function (er) { return er.message; }).join(', ')
+              : 'Oops, something went wrong. Please try again.';
+            showStatus(msg, false);
+          });
+        }
+      })
+      .catch(function () {
+        showStatus('Network error. Please check your connection and try again.', false);
+      })
+      .finally(function () {
+        btn.disabled = false;
+        btn.innerHTML = btnHTML;
+      });
+  });
+})();

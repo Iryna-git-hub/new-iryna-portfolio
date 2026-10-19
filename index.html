@@ -397,8 +397,7 @@
         <a class="group flex items-center justify-between border-b-[1.5px] border-white py-[22px] text-[clamp(28px,3.2vw,44px)] font-bold tracking-[-0.03em] text-white no-underline transition-colors duration-300 hover:text-sun" href="https://www.behance.net/IrynaLopatina"><span class="inline-block transition-transform duration-500 group-hover:translate-x-5">Behance</span> <span aria-hidden="true">↗</span></a>
         <a class="group flex items-center justify-between border-b-[1.5px] border-white py-[22px] text-[clamp(28px,3.2vw,44px)] font-bold tracking-[-0.03em] text-white no-underline transition-colors duration-300 hover:text-sun" href="https://drive.google.com/file/d/1itNRtT4xziw5_1_ux_mpnfRijNbl9MFv/view?usp=sharing"><span class="inline-block transition-transform duration-500 group-hover:translate-x-5">Download CV</span> <span aria-hidden="true">↓</span></a>
       </div>
-      <form name="contact" method="POST" data-netlify="true" class="reveal relative flex flex-col gap-5 bg-ink p-[clamp(24px,3.4vw,44px)] text-mist shadow-[14px_14px_0_#ffd23f] transition duration-500 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[22px_22px_0_#ffd23f] focus-within:-translate-x-1 focus-within:-translate-y-1 focus-within:shadow-[22px_22px_0_#ffd23f]">
-        <input type="hidden" name="form-name" value="contact">
+      <form id="contact-form" action="https://formspree.io/f/mdaaanwv" method="POST" class="reveal relative flex flex-col gap-5 bg-ink p-[clamp(24px,3.4vw,44px)] text-mist shadow-[14px_14px_0_#ffd23f] transition duration-500 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[22px_22px_0_#ffd23f] focus-within:-translate-x-1 focus-within:-translate-y-1 focus-within:shadow-[22px_22px_0_#ffd23f]">
         <div class="font-mono text-xs tracking-[0.1em] text-sun">SEND ME A MESSAGE — LET’S MAKE IT HAPPEN<span class="ml-1.5 inline-block h-3 w-[7px] animate-caret bg-sun align-[-1px]"></span></div>
         <div class="flex flex-col gap-2">
           <label for="cf-name" class="text-sm">Name</label>
@@ -413,6 +412,7 @@
           <textarea id="cf-msg" name="message" rows="5" required placeholder="Tell me about your project or role" class="resize-y py-3.5 box-border border border-white/20 bg-char px-4 text-base text-white transition hover:border-white/45 focus:border-sun focus:bg-[#313839] focus:shadow-[inset_0_-3px_0_#ffd23f] focus:outline-none"></textarea>
         </div>
         <button type="submit" class="min-h-14 cursor-pointer border-0 bg-sun bg-fill-pink bg-[length:0%_100%] bg-no-repeat font-sans text-[17px] font-bold text-ink transition-[background-size] duration-500 hover:bg-[length:100%_100%]">Send message <span aria-hidden="true" class="inline-block animate-nudge">→</span></button>
+        <p id="form-status" class="m-0 font-mono text-sm" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>
